@@ -1,0 +1,6 @@
+
+ffmpeg.exe -i demo.flv -streamid 0:50 -streamid 1:51 -vcodec libx264 out_ys.ts
+
+
+ffmpeg.exe -hwaccel cuvid -c:v h264_cuvid -i demo.flv -streamid 0:50 -streamid 1:51 -c:v h264_nvenc -acodec aac out_ys.ts
+
