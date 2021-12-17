@@ -1,1 +1,7 @@
-ffmpeg -re -i C:/Hello.mp3 -acodec libmp3lame -f flv -y rtmp://10.131.54.130/live/mp3test
+ffmpeg -re -i C:/Hello.mp3 -acodec libmp3lame -f flv -y rtmp://192.168.101.219/live/mp3test
+
+ffmpeg -re -i demo.flv -acodec libmp3lame -f flv -y rtmp://192.168.101.219/live/mp3test
+
+ffmpeg -re -i C:/Hello.mp3 -acodec libmp3lame -f flv -y rtmp://192.168.0.217/live/mp3test
+
+ffmpeg -re -i demo.flv -f flv -y rtmp://192.168.101.217/live/demo
